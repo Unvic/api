@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "VueAdmin API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/createAPI": {
+            "get": {
+                "tags": [
+                    "创建 API 文档"
+                ],
+                "summary": "创建 API 文档",
+                "operationId": "app\\controller\\Swagger::createSwagger",
+                "responses": {
+                    "200": {
+                        "description": "文档生成成功"
+                    },
+                    "400": {
+                        "description": "文档生成失败"
+                    }
+                }
+            }
+        }
+    }
+}
